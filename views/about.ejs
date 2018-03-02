@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+
+
+    <h1><%= title %></h1>
+
+    <% include templates/header.ejs%>
+
+
+    <p>I am a good boy</p>
+    <p><%= name %></p>
+
+
+
+    <h3><%=video.categoryName%></h3>
+    <u>
+      <% video.categories.forEach(function(item){ %>
+          <li><%= item.categoryName %></li>
+      <%  }) %>
+      
+
+
+    </u>
+  </body>
+</html>

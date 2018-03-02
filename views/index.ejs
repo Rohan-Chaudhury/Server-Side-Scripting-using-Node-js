@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+
+
+    <h1><%= title %></h1>
+
+    <% include templates/header.ejs%>
+
+
+    <p>Welcome to <%= title %></p>
+    <p><%= name %></p>
+
+    <p><%= points %></p>
+
+    <u>
+    	<% for(var i=1;i<6;i++){%>
+    		<li>Wahahahaha</li>
+
+    	<% }%>
+
+
+    </u>
+    <u>
+      <% vid.categories.forEach(function(item){ %>
+          <li><%= item.categoryID %></li>
+      <%  }) %>
+      
+
+
+    </u>
+  </body>
+</html>
